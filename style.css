@@ -182,9 +182,6 @@ color: #28a6be;
 {
     margin-left: 50px;
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
 }
 .services h2
 {
@@ -201,27 +198,23 @@ color: #28a6be;
 }
 .services .serv-items
 {
-    margin-top: 55px;
+
 }
 .services .serv-items p
 {
     color: black;
-    margin-top: 10px;
-    margin-left: -5px;
     letter-spacing:2px ;
     font-family:sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 100;
 
 }
 .services .serv-items2 p
 {
     color: black;
-    margin-top: 10px;
-    margin-left: -5px;
     letter-spacing:2px ;
     font-family:sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 100;
     
 }
@@ -241,13 +234,12 @@ color: #28a6be;
 }
 .serv-img img
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
     width: 80%;
-    height: 90%;
-    border: 1px;
-    border-radius: 75px;
-    border-bottom:  #000000;
     transition: 2s ease;
-    padding: 30px;
    
 }
 .serv-img img:hover
@@ -405,7 +397,7 @@ color: #28a6be;
 .contact
 {
     margin-top: 30px;
-    background-color: #bedfe6;
+    background-color: #f9f9f9;
     text-align: center;
 }
 .form input
@@ -421,4 +413,22 @@ color: #28a6be;
     padding: 5px 20px;
     border: 2px solid black;
    border-radius: 20px;
+}
+
+@media(max-width:768px){
+.serv2-cont h4 {
+ font-size:18px ;   
+}
+.serv2-cont h2
+{
+    font-size:24px ;
+}
+.home .content h5
+{
+    font-size: 28px;
+}
+.home .content h1
+{
+    font-size: 35px;
+}
 }
